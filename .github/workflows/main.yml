@@ -7,7 +7,7 @@ on:
 
 jobs:
   publish-gpr:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -17,3 +17,5 @@ jobs:
           scope: "@dolbymat"
       - run: npm install
       - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
