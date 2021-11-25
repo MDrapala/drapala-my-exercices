@@ -1,0 +1,19 @@
+name: Node.js Package
+
+on:
+  push:
+    branches:
+      - devel
+
+jobs:
+  publish-gpr:
+    runs-on: ubuntu-lastest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+          registry-url: https://npm.pkg.github.com/
+          scope: "@dolbymat"
+      - run: npm install
+      - run: npm publish
