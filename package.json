@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@drapala-my-exercices"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
