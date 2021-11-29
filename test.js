@@ -28,4 +28,13 @@ describe("Test day-1", function () {
       assert.equal(res, "zyxwvutsrqponmlkjihgfedcba");
     });
   });
+
+  //exercise 3
+  describe("exercise-3", function () {
+    it("Convert a number value to a string", function () {
+      const test = 10;
+      const res = my_alpha_number(test);
+      assert.equal(res, "10");
+    });
+  });
 });
