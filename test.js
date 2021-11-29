@@ -56,7 +56,7 @@ describe("Test day-1", function () {
 
   //exercise 5
   describe("exercise-5", function () {
-    it.only("Returns an array of all characters passed as argument", function () {
+    it("Returns an array of all characters passed as argument", function () {
       const test = "bonjour";
       const res = my_array_alpha(test);
       assert.deepEqual(res, ["b", "o", "n", "j", "o", "u", "r"]);

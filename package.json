@@ -2,6 +2,7 @@
   "name": "drapala-my-exercices",
   "version": "0.1.9",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
