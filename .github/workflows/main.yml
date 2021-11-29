@@ -13,9 +13,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-          registry-url: https://npm.pkg.github.com/
-          scope: "@drapala-my-exercices"
       - run: npm install
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          NPM_TOKEN: "${{ secrets.NPM_TOKEN }}"

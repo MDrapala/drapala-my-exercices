@@ -1,13 +1,10 @@
 {
   "name": "drapala-my-exercices",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@drapala-my-exercices"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "DRAPALA Mathieu",
