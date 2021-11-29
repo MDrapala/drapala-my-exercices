@@ -20,4 +20,12 @@ describe("Test day-1", function () {
       assert.equal(res, "abcdefghijklmnopqrstuvwxyz");
     });
   });
+
+  //exercise 2
+  describe("exercise-2", function () {
+    it("Should know to get alpha reverse", function () {
+      const res = my_display_alpha_reverse();
+      assert.equal(res, "zyxwvutsrqponmlkjihgfedcba");
+    });
+  });
 });
