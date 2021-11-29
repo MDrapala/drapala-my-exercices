@@ -6,6 +6,7 @@ import { my_alpha_number } from "./day-1/exercise-3.js";
 import { my_size_alpha } from "./day-1/exercise-4.js";
 import { my_array_alpha } from "./day-1/exercise-5.js";
 import { my_length_array } from "./day-1/exercise-6.js";
+import { my_is_posi_neg } from "./day-1/exercise-7.js";
 
 describe("Test day-1", function () {
   //Exercise 0
@@ -68,6 +69,15 @@ describe("Test day-1", function () {
       const test = ["aia", "aia", "aia"];
       const res = my_length_array(test);
       assert.equal(res, 3);
+    });
+  });
+
+  //exercise 7
+  describe("exercise-7", function () {
+    it("A function that displays POSITIVE or NEGATIVE depending on the integer passed as argument.  If nbr is negative then display NEGATIVE", function () {
+      const test = 10;
+      const res = my_is_posi_neg(test);
+      assert.equal(res, "POSITIF");
     });
   });
 });
