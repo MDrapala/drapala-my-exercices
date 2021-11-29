@@ -12,4 +12,12 @@ describe("Test day-1", function () {
       assert.equal(res, 0 || cal1 + cal2);
     });
   });
+
+  //exercise 1
+  describe("exercise-1", function () {
+    it("Should know to get alpha", function () {
+      const res = my_display_alpha();
+      assert.equal(res, "abcdefghijklmnopqrstuvwxyz");
+    });
+  });
 });
