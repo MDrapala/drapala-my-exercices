@@ -4,6 +4,7 @@ import { my_display_alpha } from "./day-1/exercise-1.js";
 import { my_display_alpha_reverse } from "./day-1/exercise-2.js";
 import { my_alpha_number } from "./day-1/exercise-3.js";
 import { my_size_alpha } from "./day-1/exercise-4.js";
+import { my_array_alpha } from "./day-1/exercise-5.js";
 
 describe("Test day-1", function () {
   //Exercise 0
@@ -48,6 +49,15 @@ describe("Test day-1", function () {
       const test = "mathieu";
       const res = my_size_alpha(test);
       assert.equal(res, 7);
+    });
+  });
+
+  //exercise 5
+  describe("exercise-5", function () {
+    it.only("Returns an array of all characters passed as argument", function () {
+      const test = "bonjour";
+      const res = my_array_alpha(test);
+      assert.deepEqual(res, ["b", "o", "n", "j", "o", "u", "r"]);
     });
   });
 });
