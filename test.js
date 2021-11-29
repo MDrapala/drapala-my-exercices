@@ -5,6 +5,7 @@ import { my_display_alpha_reverse } from "./day-1/exercise-2.js";
 import { my_alpha_number } from "./day-1/exercise-3.js";
 import { my_size_alpha } from "./day-1/exercise-4.js";
 import { my_array_alpha } from "./day-1/exercise-5.js";
+import { my_length_array } from "./day-1/exercise-6.js";
 
 describe("Test day-1", function () {
   //Exercise 0
@@ -58,6 +59,15 @@ describe("Test day-1", function () {
       const test = "bonjour";
       const res = my_array_alpha(test);
       assert.deepEqual(res, ["b", "o", "n", "j", "o", "u", "r"]);
+    });
+  });
+
+  //exercise 6
+  describe("exercise-6", function () {
+    it("Counts the number of elements contained in an array passed in parameter", function () {
+      const test = ["aia", "aia", "aia"];
+      const res = my_length_array(test);
+      assert.equal(res, 3);
     });
   });
 });
